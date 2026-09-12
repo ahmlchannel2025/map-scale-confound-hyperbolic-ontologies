@@ -1,0 +1,253 @@
+path,size_mb,family,notebook,MAP,mean_rank,median_rank,distortion,dim,extra
+results/dim_runs/c_node.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/const_d10.pt,1.88,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/const_d2.pt,0.38,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/const_d5.pt,0.94,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/d5hi_const_x12.0_seed0.pt,0.94,"d5hi: d=5 at high tau (8, 12)",notebooks/08,0.558104139302666,44.416,6.0,0.12323179076446343,,{}
+results/dim_runs/d5hi_const_x12.0_seed1.pt,0.94,"d5hi: d=5 at high tau (8, 12)",notebooks/08,0.5736953213684324,37.5,6.0,0.12392740292714063,,{}
+results/dim_runs/d5hi_const_x12.0_seed2.pt,0.94,"d5hi: d=5 at high tau (8, 12)",notebooks/08,0.5846120147124115,39.723,6.0,0.12755837247407265,,{}
+results/dim_runs/d5hi_const_x8.0_seed0.pt,0.94,"d5hi: d=5 at high tau (8, 12)",notebooks/08,0.778116096129355,11.65,4.0,0.12618192607887033,,{}
+results/dim_runs/d5hi_const_x8.0_seed1.pt,0.94,"d5hi: d=5 at high tau (8, 12)",notebooks/08,0.7918124624955654,10.238,4.0,0.12288476879132264,,{}
+results/dim_runs/d5hi_const_x8.0_seed2.pt,0.94,"d5hi: d=5 at high tau (8, 12)",notebooks/08,0.7966726018775981,10.914,4.0,0.13053909874577704,,{}
+results/dim_runs/deeperlearned_lineint_d10.pt,1.87,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000, ""best"": 0.9231638361783966}"
+results/dim_runs/deeperlearned_lineint_d2.pt,0.38,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000, ""best"": 0.6226623695744572}"
+results/dim_runs/deeperlearned_lineint_d5.pt,0.94,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000, ""best"": 0.6560731600891545}"
+results/dim_runs/dimtemp_const_d2_x1.0.pt,0.38,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.5998885991265693,1338.2,4.0,0.1968631655336406,,{}
+results/dim_runs/dimtemp_const_d2_x2.23.pt,0.38,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.48571646634571164,470.688,6.0,0.2239473479893358,,{}
+results/dim_runs/dimtemp_const_d2_x5.0.pt,0.38,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.27916527635828664,98.896,12.0,0.16074471179265293,,{}
+results/dim_runs/dimtemp_const_d5_x1.0.pt,0.94,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.7427540271555099,249.101,3.0,0.11515361021854352,,{}
+results/dim_runs/dimtemp_const_d5_x2.23.pt,0.94,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.7148491746651061,37.448,4.0,0.11756502983007314,,{}
+results/dim_runs/dimtemp_const_d5_x5.0.pt,0.94,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.7998182951528682,11.378,4.0,0.12505984923628488,,{}
+results/dim_runs/dimtemp_graded_d2_x1.0.pt,0.38,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.5364824266403705,742.072,5.0,0.26582946623622467,,{}
+results/dim_runs/dimtemp_graded_d2_x2.23.pt,0.38,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.20662855655763127,599.285,23.0,0.17426697028340477,,{}
+results/dim_runs/dimtemp_graded_d2_x5.0.pt,0.38,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.04977863147064839,3376.431,189.0,0.2329254453845338,,{}
+results/dim_runs/dimtemp_graded_d5_x1.0.pt,0.94,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.8161309489533162,443.294,3.0,0.15463881202335023,,{}
+results/dim_runs/dimtemp_graded_d5_x2.23.pt,0.94,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.8409460843870378,136.627,3.0,0.1494003321231774,,{}
+results/dim_runs/dimtemp_graded_d5_x5.0.pt,0.94,dimtemp: early single-seed dimension x temperature grid,notebooks/07,0.6525273931260847,2088.624,3.0,0.20216909824973026,,{}
+results/dim_runs/euclid_d10.pt,5.62,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/euclid_d2.pt,1.13,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/euclid_d5.pt,2.81,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/go_const_x1.0.pt,1.53,go: Gene Ontology temperature sweep,notebooks/08,0.29804127678269915,3211.474,586.5,0.2405856831206863,,{}
+results/dim_runs/go_const_x2.23.pt,1.53,go: Gene Ontology temperature sweep,notebooks/08,0.3036557851146305,1568.187,76.0,0.23075482570221018,,{}
+results/dim_runs/go_const_x3.0.pt,1.53,go: Gene Ontology temperature sweep,notebooks/08,0.341515256231448,1006.923,33.0,0.22981226120000664,,{}
+results/dim_runs/go_const_x5.0.pt,1.53,go: Gene Ontology temperature sweep,notebooks/08,0.41872648676678714,327.667,18.0,0.2243358836069739,,{}
+results/dim_runs/gp_const_x1.0_s0.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_const_x1.0_s1.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_const_x1.0_s2.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_const_x2.23_s0.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_const_x2.23_s1.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_const_x2.23_s2.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_ctrl_x1.0_s0.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_ctrl_x1.0_s1.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_ctrl_x1.0_s2.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_ctrl_x2.23_s0.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_ctrl_x2.23_s1.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_ctrl_x2.23_s2.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_flip_x1.0_s0.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_flip_x1.0_s1.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_flip_x1.0_s2.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_flip_x2.23_s0.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_flip_x2.23_s1.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/gp_flip_x2.23_s2.pt,1.53,"gp: Gene Ontology positional-field arms (const / flipped / control), 3 seeds",notebooks/07,,,,,,{}
+results/dim_runs/graded_d10.pt,1.88,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/graded_d2.pt,0.38,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/graded_d5.pt,0.94,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 3000}"
+results/dim_runs/hi_const_d10_x12.0_seed0.pt,1.87,hi: d=10 at high tau,notebooks/08,0.9940856929081825,3.609,3.0,0.12769599677187965,,{}
+results/dim_runs/hi_const_d10_x20.0_seed0.pt,1.87,hi: d=10 at high tau,notebooks/08,0.21638765373801383,225.421,19.0,0.1220051735482451,,{}
+results/dim_runs/kappa_chint.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_flipped.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_go.npy,0.31,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_go_ctrl.npy,0.31,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_go_flip.npy,0.31,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_go_flip_bal.npy,0.31,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_margin.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_original.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_pos.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kappa_three.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/kernelfield_d10.pt,1.87,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 1500, ""best"": 0.8227989897014714}"
+results/dim_runs/kernelreweight_d10.pt,1.87,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 1500, ""best"": 0.9774067495939096}"
+results/dim_runs/ktest_position.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/ktest_pure-depth.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/ktest_shuffled.npy,0.37,"curvature feature vectors (inputs, not results)",notebooks/07,,,,,,
+results/dim_runs/learned_d10.pt,1.87,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 100, ""best_map"": 0.757732858001762}"
+results/dim_runs/learned_d2.pt,0.38,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 1000, ""best_map"": 0.62834252051208}"
+results/dim_runs/learned_d5.pt,0.94,"phase-4 converged runs (lr 50, long training)",notebooks/06,,,,,,"{""ep"": 100, ""best_map"": 0.6722809127670147}"
+results/dim_runs/lr_baseline.pt,1.87,lr: learning-rate controls (Table 3),notebooks/08,0.7736081064256466,113.209,3.0,0.1089098128642942,,{}
+results/dim_runs/lr_lr250.pt,1.87,lr: learning-rate controls (Table 3),notebooks/08,0.7725300228988314,109.986,3.0,0.11039024074110117,,{}
+results/dim_runs/lr_scale5.pt,1.87,lr: learning-rate controls (Table 3),notebooks/08,0.9773730288738466,3.487,3.0,0.11421590286199819,,{}
+results/dim_runs/lr_scale5_lr10.pt,1.87,lr: learning-rate controls (Table 3),notebooks/08,0.9132598095693625,3.622,3.0,0.12371250687229324,,{}
+results/dim_runs/ms_const_x1.0_seed0.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.773610713840538,113.226,3.0,0.10890984016314272,,{}
+results/dim_runs/ms_const_x1.0_seed1.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.7848336779905526,178.638,3.0,0.11189398059639806,,{}
+results/dim_runs/ms_const_x1.0_seed2.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.7799162278027054,107.478,3.0,0.10971683079525033,,{}
+results/dim_runs/ms_const_x2.23_seed0.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9006664441514763,6.818,3.0,0.1075977730480888,,{}
+results/dim_runs/ms_const_x2.23_seed1.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.8986870026956372,7.577,3.0,0.10969640858415829,,{}
+results/dim_runs/ms_const_x2.23_seed2.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.8963587618608243,8.424,3.0,0.1067054566886568,,{}
+results/dim_runs/ms_const_x3.0_seed0.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9410214040225295,4.106,3.0,0.10588770810189345,,{}
+results/dim_runs/ms_const_x3.0_seed1.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9416488539033014,4.412,3.0,0.10819821228416002,,{}
+results/dim_runs/ms_const_x3.0_seed2.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9395545942473991,4.305,3.0,0.10529035231624521,,{}
+results/dim_runs/ms_const_x5.0_seed0.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9773730288738466,3.487,3.0,0.11421590286199819,,{}
+results/dim_runs/ms_const_x5.0_seed1.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9783379558828054,3.476,3.0,0.11704821510467875,,{}
+results/dim_runs/ms_const_x5.0_seed2.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9785694067652048,3.612,3.0,0.11179996672571585,,{}
+results/dim_runs/ms_const_x8.0_seed0.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9912786682162054,3.46,3.0,0.12358650268240433,,{}
+results/dim_runs/ms_const_x8.0_seed1.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9920048625183153,3.526,3.0,0.12838229745529858,,{}
+results/dim_runs/ms_const_x8.0_seed2.pt,1.87,"ms: multi-seed d=10 temperature sweep (Tables 2, 4)",notebooks/08,0.9915885791457799,3.533,3.0,0.11980850714689024,,{}
+results/dim_runs/msld_const_d2_x1.0_seed0.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.5998885991265693,1338.2,4.0,0.1968631655336406,,{}
+results/dim_runs/msld_const_d2_x1.0_seed1.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.6004458544079991,1204.391,4.0,0.19108560083949988,,{}
+results/dim_runs/msld_const_d2_x1.0_seed2.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.5995511939191462,1563.878,4.0,0.19297230414298372,,{}
+results/dim_runs/msld_const_d2_x2.23_seed0.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.48571646634571164,470.688,6.0,0.2239473479893358,,{}
+results/dim_runs/msld_const_d2_x2.23_seed1.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.49750032835428704,533.138,5.0,0.21953907625973984,,{}
+results/dim_runs/msld_const_d2_x2.23_seed2.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.49854780252961134,526.508,5.0,0.22670734693603178,,{}
+results/dim_runs/msld_const_d2_x5.0_seed0.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.27916527635828664,98.896,12.0,0.16074471179265293,,{}
+results/dim_runs/msld_const_d2_x5.0_seed1.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.29030628332418207,85.301,12.5,0.15312315910109073,,{}
+results/dim_runs/msld_const_d2_x5.0_seed2.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.2794016864290182,69.919,12.0,0.1560433975778444,,{}
+results/dim_runs/msld_const_d5_x1.0_seed0.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.7428018755678126,249.093,3.0,0.11515342903882472,,{}
+results/dim_runs/msld_const_d5_x1.0_seed1.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.7414548283866121,193.5,3.0,0.11658246096742238,,{}
+results/dim_runs/msld_const_d5_x1.0_seed2.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.7375645809397867,215.903,3.0,0.11562624237278146,,{}
+results/dim_runs/msld_const_d5_x2.23_seed0.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.714845713120653,37.446,4.0,0.1175648107175887,,{}
+results/dim_runs/msld_const_d5_x2.23_seed1.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.7132396147092418,34.736,4.0,0.11662132296313993,,{}
+results/dim_runs/msld_const_d5_x2.23_seed2.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.7264687681092503,38.471,4.0,0.1195638076010585,,{}
+results/dim_runs/msld_const_d5_x5.0_seed0.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.7998182951528682,11.378,4.0,0.12505984923628488,,{}
+results/dim_runs/msld_const_d5_x5.0_seed1.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.794214578091567,9.037,3.0,0.12152730471456005,,{}
+results/dim_runs/msld_const_d5_x5.0_seed2.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.803559499392279,10.49,4.0,0.12902164260357699,,{}
+results/dim_runs/msld_graded_d2_x1.0_seed0.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.5364824266403705,742.072,5.0,0.26582946623622467,,{}
+results/dim_runs/msld_graded_d2_x1.0_seed1.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.5332085866136747,695.885,6.0,0.24720218022230087,,{}
+results/dim_runs/msld_graded_d2_x1.0_seed2.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.5434873445257615,736.007,5.0,0.2607571600965711,,{}
+results/dim_runs/msld_graded_d2_x2.23_seed0.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.20662855655763127,599.285,23.0,0.17426697028340477,,{}
+results/dim_runs/msld_graded_d2_x2.23_seed1.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.20795250892199182,494.864,21.0,0.17216633157051758,,{}
+results/dim_runs/msld_graded_d2_x2.23_seed2.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.21001862389527418,614.695,22.0,0.17816579717304132,,{}
+results/dim_runs/msld_graded_d2_x5.0_seed0.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.04977863147064839,3376.431,189.0,0.2329254453845338,,{}
+results/dim_runs/msld_graded_d2_x5.0_seed1.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.04755153163106679,3431.113,188.5,0.23460767856256748,,{}
+results/dim_runs/msld_graded_d2_x5.0_seed2.pt,0.38,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.04785319709105002,3440.507,198.0,0.2365539264556074,,{}
+results/dim_runs/msld_graded_d5_x1.0_seed0.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.8161344591000659,443.314,3.0,0.15462824090556168,,{}
+results/dim_runs/msld_graded_d5_x1.0_seed1.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.8147536288116303,474.751,3.0,0.15843115152790016,,{}
+results/dim_runs/msld_graded_d5_x1.0_seed2.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.8245834709391588,456.177,3.0,0.16077433041599828,,{}
+results/dim_runs/msld_graded_d5_x2.23_seed0.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.8409460843870378,136.627,3.0,0.1494003321231774,,{}
+results/dim_runs/msld_graded_d5_x2.23_seed1.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.8387906187603771,135.361,3.0,0.15349704257993427,,{}
+results/dim_runs/msld_graded_d5_x2.23_seed2.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.8411420090898755,114.648,3.0,0.1558664870802066,,{}
+results/dim_runs/msld_graded_d5_x5.0_seed0.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.6525273931260847,2088.624,3.0,0.20216909824973026,,{}
+results/dim_runs/msld_graded_d5_x5.0_seed1.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.6540588506241407,1942.209,3.0,0.19828061573310457,,{}
+results/dim_runs/msld_graded_d5_x5.0_seed2.pt,0.94,"msld: multi-seed low-dim temperature sweep (Table 4, d=2/5)",notebooks/08,0.6506833706454673,2168.347,4.0,0.19951661400835655,,{}
+results/dim_runs/mt_const_d10_x1.0_seed0.pt,1.87,mt: duplicate d=10 tau=1 seeds (superseded by ms_*),notebooks/08,0.7736081064256466,113.209,3.0,0.1089098128642942,,{}
+results/dim_runs/mt_const_d10_x1.0_seed1.pt,1.87,mt: duplicate d=10 tau=1 seeds (superseded by ms_*),notebooks/08,0.7848336779905526,178.638,3.0,0.11189398059639806,,{}
+results/dim_runs/negK10_x1.pt,1.87,negK: negative-count sensitivity,notebooks/08,0.7920363946692847,102.317,3.0,0.10961462885429739,,{}
+results/dim_runs/negK10_x3.pt,1.87,negK: negative-count sensitivity,notebooks/08,0.8988537946096079,4.056,3.0,0.11191403815627865,,{}
+results/dim_runs/negK200_x1.pt,1.87,negK: negative-count sensitivity,notebooks/08,0.7684066783476551,148.38,3.0,0.10872750005679205,,{}
+results/dim_runs/negK200_x3.pt,1.87,negK: negative-count sensitivity,notebooks/08,0.9520653358918262,5.052,3.0,0.1100190141666885,,{}
+results/dim_runs/negK50_x1.pt,1.87,negK: negative-count sensitivity,notebooks/08,0.773610713840538,113.226,3.0,0.10890984016314272,,{}
+results/dim_runs/negK50_x3.pt,1.87,negK: negative-count sensitivity,notebooks/08,0.9309084677726294,4.395,3.0,0.1068124161711961,,{}
+results/dim_runs/norm_const_d5_x1.0_seed0.pt,0.94,norm: norm-penalty control,notebooks/08,0.7427540271555099,249.101,3.0,0.11515361021854352,,{}
+results/dim_runs/normpen_b0.0.pt,1.87,normpen: norm-penalty (boundary-escape) causal test,notebooks/08,0.7736081064256466,113.209,3.0,0.1089098128642942,,{}
+results/dim_runs/normpen_b0.5.pt,1.87,normpen: norm-penalty (boundary-escape) causal test,notebooks/08,0.7874857503849297,105.278,3.0,0.10868954833924376,,{}
+results/dim_runs/normpen_b10.0.pt,1.87,normpen: norm-penalty (boundary-escape) causal test,notebooks/08,0.21034204378863763,190.141,29.0,0.17880071889469054,,{}
+results/dim_runs/normpen_b2.0.pt,1.87,normpen: norm-penalty (boundary-escape) causal test,notebooks/08,0.45352231181117475,149.535,9.0,0.1571567491288305,,{}
+results/dim_runs/normpen_b5.0.pt,1.87,normpen: norm-penalty (boundary-escape) causal test,notebooks/08,0.2718857507322057,73.943,19.5,0.16536713378290058,,{}
+results/dim_runs/pos_d5_x1.0_s0.pt,0.94,pos: per-node curvature in the metric (position_dependent_curvature),notebooks/07,0.7081787493147401,1318.827,3.0,0.2667575541484753,5,"{""arm"": ""pos"", ""dim"": 5}"
+results/dim_runs/pos_d5_x1.0_s1.pt,0.94,pos: per-node curvature in the metric (position_dependent_curvature),notebooks/07,0.7229409258636282,928.769,3.0,0.1712959662742419,5,"{""arm"": ""pos"", ""dim"": 5}"
+results/dim_runs/pos_d5_x1.0_s2.pt,0.94,pos: per-node curvature in the metric (position_dependent_curvature),notebooks/07,0.7182609001660227,1008.064,3.0,0.16966035448134414,5,"{""arm"": ""pos"", ""dim"": 5}"
+results/dim_runs/pos_d5_x2.23_s0.pt,0.94,pos: per-node curvature in the metric (position_dependent_curvature),notebooks/07,0.7530333800966073,249.88,4.0,0.14940387569883945,5,"{""arm"": ""pos"", ""dim"": 5}"
+results/dim_runs/pos_d5_x2.23_s1.pt,0.94,pos: per-node curvature in the metric (position_dependent_curvature),notebooks/07,0.7449505386986381,183.038,4.0,0.15380628655680328,5,"{""arm"": ""pos"", ""dim"": 5}"
+results/dim_runs/sark_d2_t3.0_D.npy,0.75,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d2_t3.0_r.npy,0.37,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d2_t5.0_D.npy,0.75,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d2_t5.0_r.npy,0.37,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d2_t8.0_D.npy,0.75,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d2_t8.0_r.npy,0.37,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d5_t3.0_D.npy,1.87,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d5_t3.0_r.npy,0.37,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d5_t5.0_D.npy,1.87,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d5_t5.0_r.npy,0.37,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d5_t8.0_D.npy,1.87,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sark_d5_t8.0_r.npy,0.37,Sarkar/De Sa d-dimensional construction,notebooks/07,,,,,,
+results/dim_runs/sarkar_tau0.5_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau0.5_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau1.0_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau1.0_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau12.0_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau12.0_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau16.0_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau16.0_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau2.0_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau2.0_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau20.0_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau20.0_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau3.0_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau3.0_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau5.0_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau5.0_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau8.0_r.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sarkar_tau8.0_th.npy,0.37,"Sarkar 2-D construction, polar coords (Table 6)",notebooks/07,,,,,,
+results/dim_runs/sub_const_x0.1.pt,1.87,sub: sub-unit temperatures,notebooks/08,0.6982089251086318,1390.438,3.0,0.1154143000381766,,{}
+results/dim_runs/sub_const_x0.25.pt,1.87,sub: sub-unit temperatures,notebooks/08,0.6875302974184361,1480.171,3.0,0.11706162141086972,,{}
+results/dim_runs/sub_const_x0.5.pt,1.87,sub: sub-unit temperatures,notebooks/08,0.6900898875984747,1190.908,3.0,0.11736869000919364,,{}
+results/dim_runs/sub_const_x1.0.pt,1.87,sub: sub-unit temperatures,notebooks/08,0.773610713840538,113.226,3.0,0.10890984016314272,,{}
+results/dim_runs/temp_const_x1.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.7736107852157723,113.223,3.0,0.10890974082192253,,{}
+results/dim_runs/temp_const_x2.23.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.9006460569446955,6.805,3.0,0.10759805978351486,,{}
+results/dim_runs/temp_const_x3.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.9410600026679306,4.109,3.0,0.10589395728372372,,{}
+results/dim_runs/temp_const_x5.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.9775909799229724,3.486,3.0,0.11421654811562411,,{}
+results/dim_runs/temp_const_x8.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.991142512292328,3.458,3.0,0.12354276207694011,,{}
+results/dim_runs/temp_euclid_x1.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.7863953563824136,6.155,4.0,0.18771462940095376,,{}
+results/dim_runs/temp_euclid_x2.23.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.7851234261977309,5.855,3.0,0.18434784707964696,,{}
+results/dim_runs/temp_euclid_x3.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.7782616852730878,6.567,3.0,0.18798094850686536,,{}
+results/dim_runs/temp_euclid_x5.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.7763832636764848,6.5,4.0,0.19083943968053466,,{}
+results/dim_runs/temp_euclid_x8.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.780999605187382,7.278,4.0,0.19197216455630692,,{}
+results/dim_runs/temp_graded_x1.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.8808216185690224,262.846,3.0,0.14998739272096645,,{}
+results/dim_runs/temp_graded_x2.23.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.9065815887065392,56.144,3.0,0.14335509808359484,,{}
+results/dim_runs/temp_graded_x3.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.8978197501481434,55.659,3.0,0.14880801662290224,,{}
+results/dim_runs/temp_graded_x5.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.7418056584123688,1485.066,3.0,0.21093547576851102,,{}
+results/dim_runs/temp_graded_x8.0.pt,1.87,temp: single-seed d=10 temperature sweep (Table 2 Euclid / pos-dep rows),notebooks/08,0.6756453597562192,2391.68,3.0,0.23899044384000906,,{}
+results/paper_experiments/pos_A_full_x1.0_s0.npy,1.87,Block A: positions for full-graph per-node MAP,notebooks/09,,,,,,
+results/paper_experiments/pos_A_full_x3.0_s0.npy,1.87,Block A: positions for full-graph per-node MAP,notebooks/09,,,,,,
+results/paper_experiments/pos_A_full_x8.0_s0.npy,1.87,Block A: positions for full-graph per-node MAP,notebooks/09,,,,,,
+models/phase2_baselines/euclidean_d10.pt,1.88,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,,,,,10,"{""num_nodes"": 46817, ""dim"": 10, ""method"": ""euclidean"", ""final_loss"": 0.039777360932923146, ""training_config"": {""num_epochs"": 50, ""batch_size"": 1024, ""num_negatives"": 10, ""learning_rate"": 0.1, ""init_scale"": 0.001}, ""date_trained"": ""2026-05-17T06:14:15.350137""}"
+models/phase2_baselines/euclidean_d10_K50.pt,1.88,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,,,,,,"{""history"": ""<list len=50>"", ""config"": {""dim"": 10, ""num_negatives"": 50, ""batch_size"": 1024, ""learning_rate"": 0.1, ""num_epochs"": 50}}"
+models/phase2_baselines/euclidean_d5.pt,0.94,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.27269207678216306,88.8136961722488,17.0,,5,"{""method"": ""euclidean"", ""dim"": 5, ""final_loss"": 0.0929002057065804, ""date_trained"": ""2026-05-15T18:17:28.520028""}"
+models/phase2_baselines/euclidean_d50.pt,9.37,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.900106391940014,109.80707450444292,3.0,,50,"{""method"": ""euclidean"", ""dim"": 50, ""final_loss"": 0.08496986311731156, ""date_trained"": ""2026-05-15T18:19:27.277232""}"
+models/phase2_baselines/mixed_curvature_d10.pt,1.88,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.756310004497069,243.82587149692412,3.0,,10,"{""method"": ""mixed_curvature_PxE_permanent_freeze_hier"", ""dim"": 10, ""config"": {""total_dim"": 10, ""dim_h"": 5, ""dim_e"": 5, ""lr"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024, ""c"": 1.0}, ""final_loss"": 0.97"
+models/phase2_baselines/mixed_curvature_d5.pt,0.94,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.6806030706135352,746.0102956254271,3.0,,5,"{""method"": ""mixed_curvature_PxE_permanent_freeze_hier"", ""dim"": 5, ""config"": {""total_dim"": 5, ""dim_h"": 3, ""dim_e"": 2, ""lr"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024, ""c"": 1.0}, ""final_loss"": 1.1900"
+models/phase2_baselines/mixed_curvature_d50.pt,9.37,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.8274095239953723,39.690725393028025,3.0,,50,"{""method"": ""mixed_curvature_PxE_permanent_freeze_hier"", ""dim"": 50, ""config"": {""total_dim"": 50, ""dim_h"": 25, ""dim_e"": 25, ""lr"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024, ""c"": 1.0}, ""final_loss"": 0."
+models/phase2_baselines/poincare_d10_attempt5.pt,1.87,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,,,,,10,"{""num_nodes"": 46817, ""dim"": 10, ""method"": ""poincare_K-1_attempt5"", ""config"": {""lr"": 0.01, ""clip"": 0.95, ""epochs"": 300, ""init_scale"": 0.05}, ""final_loss"": 0.7484245738262847, ""date_trained"": ""2026-05-15T01:22:45.144728""}"
+models/phase2_baselines/poincare_d10_freeze_hier.pt,1.88,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.7408,497.19,3.0,,,"{""method"": ""poincare_K-1_freeze_hier"", ""config"": {""lr"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 50, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300}, ""final_loss"": 0.7484, ""date_trained"": ""2026-05-15T19:02:08.538374""}"
+models/phase2_baselines/poincare_d10_permanent_freeze_hier.pt,1.88,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.7399,497.3826,3.0,,10,"{""method"": ""poincare_K-1_permanent_freeze_hier"", ""dim"": 10, ""config"": {""lr"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024}, ""date_trained"": ""2026-05-15T04:23:41.997350""}"
+models/phase2_baselines/poincare_d10_unconverged.pt,1.88,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,,,,,10,"{""num_nodes"": 46817, ""dim"": 10, ""method"": ""poincare_K-1_unconverged"", ""note"": ""Did not converge to working baseline. Saved for next session debugging."", ""date_trained"": ""2026-05-14T21:24:15.198653""}"
+models/phase2_baselines/poincare_d50_permanent_freeze_hier.pt,9.37,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.8186983810126992,59.348534688995215,3.0,,50,"{""method"": ""poincare_K-1_permanent_freeze_hier"", ""dim"": 50, ""config"": {""lr"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024}, ""final_loss"": 0.7502823791842874, ""date_trained"": ""2026-05-15T20:27:39.15956"
+models/phase2_baselines/poincare_d5_permanent_freeze_hier.pt,0.94,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.6827185274146321,989.374765037594,3.0,,5,"{""method"": ""poincare_K-1_permanent_freeze_hier"", ""dim"": 5, ""config"": {""lr"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024}, ""final_loss"": 0.8037730587400643, ""date_trained"": ""2026-05-15T19:45:08.009736"
+models/phase2_baselines/poincare_learnable_K_d10.pt,1.88,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.554977898033975,2698.964734278879,4.0,,10,"{""method"": ""poincare_learnable_K"", ""dim"": 10, ""config"": {""optimizer"": ""RiemannianSGD"", ""lr"": 10.0, ""lr_c"": 0.01, ""init_c"": 1.0, ""c_min"": 0.1, ""c_max"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024}, ""f"
+models/phase2_baselines/poincare_learnable_K_d5.pt,0.94,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.6543730869238694,2713.8345223855094,3.0,,5,"{""method"": ""poincare_learnable_K"", ""dim"": 5, ""config"": {""optimizer"": ""RiemannianSGD"", ""lr"": 10.0, ""lr_c"": 0.01, ""init_c"": 1.0, ""c_min"": 0.1, ""c_max"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024}, ""fi"
+models/phase2_baselines/poincare_learnable_K_d50.pt,9.37,"Phase 2 baseline (K=50, 300 epochs)",notebooks/02,0.5552850854175266,4712.958924299385,6.0,,50,"{""method"": ""poincare_learnable_K"", ""dim"": 50, ""config"": {""optimizer"": ""RiemannianSGD"", ""lr"": 10.0, ""lr_c"": 0.01, ""init_c"": 1.0, ""c_min"": 0.1, ""c_max"": 10.0, ""burnin_epochs"": 10, ""freeze_train_epochs"": 10000, ""margin"": 0.05, ""lambda_h"": 1.0, ""epochs"": 300, ""num_negatives"": 50, ""batch_size"": 1024}, ""f"
+models/phase3_method1/alpha_sweep_d10_alpha-0.200_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": -0.20000000298023224, ""bandwidth_h"": 0.37384721636772156, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 44, ""best_MAP"": 0.711054225041978}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha+0.000_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": 0.0, ""bandwidth_h"": 0.3711194396018982, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 0, ""best_MAP"": 0.6721426194799556}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha+0.200_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": 0.20000000298023224, ""bandwidth_h"": 0.37168124318122864, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 29, ""best_MAP"": 0.7140210751517365}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha+0.400_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": 0.4000000059604645, ""bandwidth_h"": 0.37407824397087097, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 14, ""best_MAP"": 0.7001621629492452}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha+0.600_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": 0.6000000238418579, ""bandwidth_h"": 0.3737049698829651, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 14, ""best_MAP"": 0.697101281807128}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha+0.800_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": 0.800000011920929, ""bandwidth_h"": 0.37543344497680664, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 9, ""best_MAP"": 0.691892064912644}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha-0.200_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": -0.20000000298023224, ""bandwidth_h"": 0.3733666241168976, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 39, ""best_MAP"": 0.7102054770313874}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha-0.400_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": -0.4000000059604645, ""bandwidth_h"": 0.373367577791214, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 14, ""best_MAP"": 0.7027088981136491}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha-0.600_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": -0.6000000238418579, ""bandwidth_h"": 0.3726656138896942, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 19, ""best_MAP"": 0.700521718514381}"
+models/phase3_method1/alpha_sweep_fixedeval_d10_alpha-0.800_best.pt,4.12,"Phase 3 Method 1 (tree-anchored, line-integral) alpha sweep",notebooks/03,,,,,10,"{""alpha"": -0.800000011920929, ""bandwidth_h"": 0.3729267120361328, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 14, ""best_MAP"": 0.7008031670161571}"
+models/phase3_method1_exp/exp_sweep_d10_alpha+0.000_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": 0.0, ""bandwidth_h"": 0.37393489480018616, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 0, ""best_MAP"": 0.6682661046437304}"
+models/phase3_method1_exp/exp_sweep_d10_alpha-0.200_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.20000000298023224, ""bandwidth_h"": 0.3732445538043976, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 0, ""best_MAP"": 0.670942303630369}"
+models/phase3_method1_exp/exp_sweep_d10_alpha-0.400_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.4000000059604645, ""bandwidth_h"": 0.3740341067314148, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 59, ""best_MAP"": 0.6872732501889995}"
+models/phase3_method1_exp/exp_sweep_d10_alpha-0.600_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.6000000238418579, ""bandwidth_h"": 0.37395521998405457, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 9, ""best_MAP"": 0.6829842441522262}"
+models/phase3_method1_exp/exp_sweep_d10_alpha-0.800_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.800000011920929, ""bandwidth_h"": 0.3725871443748474, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 0, ""best_MAP"": 0.6765095319178343}"
+models/phase3_method1_exp/exp_sweep_d10_alpha-1.000_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -1.0, ""bandwidth_h"": 0.37282830476760864, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_epoch"": 0, ""best_MAP"": 0.6785903990745601}"
+models/phase3_method1_exp_v4/exp_fixed_d10_alpha-0.400_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.4000000059604645, ""bandwidth_h"": 0.3712806701660156, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 0, ""best_MAP"": 0.675413806168591}"
+models/phase3_method1_exp_v4/phase2ref_a-0.4_d10_alpha-0.400_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.4000000059604645, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 29, ""best_MAP"": 0.7693665255062249}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha+0.000_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": 0.0, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 49, ""best_MAP"": 0.7602601213116355}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha+0.200_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": 0.20000000298023224, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 59, ""best_MAP"": 0.7674310246774025}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha+0.400_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": 0.4000000059604645, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 59, ""best_MAP"": 0.7726600216905963}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha-0.200_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.20000000298023224, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 59, ""best_MAP"": 0.7672509628200229}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha-0.400_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.4000000059604645, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 59, ""best_MAP"": 0.772550560256506}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha-0.600_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.6000000238418579, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 49, ""best_MAP"": 0.774959998067959}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha-0.800_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -0.800000011920929, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 39, ""best_MAP"": 0.7752059477412706}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha-1.000_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -1.0, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 39, ""best_MAP"": 0.7718605145807214}"
+models/phase3_method1_exp_v4/sweep_phase2ref_d10_alpha-1.200_best.pt,4.12,"Phase 3 Method 1, exp coupling / Phase-2 reference cloud",notebooks/03-04,,,,,10,"{""alpha"": -1.2000000476837158, ""bandwidth_h"": 0.548365592956543, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""coupling"": ""exp"", ""kappa_scale"": 1.0, ""bias_free"": true, ""best_epoch"": 39, ""best_MAP"": 0.766887124085113}"
+models/phase3_method2/method2_d10_alpha-0.200_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": -0.20000000298023224, ""h"": 0.39214015007019043, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.7106976568183418, ""method"": ""method2_alternating""}"
+models/phase3_method2/method2_fixedeval_d10_alpha+0.000_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": 0.0, ""h"": 0.3737681210041046, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.6570998111365672, ""method"": ""method2_alternating""}"
+models/phase3_method2/method2_fixedeval_d10_alpha+0.200_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": 0.20000000298023224, ""h"": 0.3946022391319275, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.7074635619594127, ""method"": ""method2_alternating""}"
+models/phase3_method2/method2_fixedeval_d10_alpha+0.400_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": 0.4000000059604645, ""h"": 0.3757205903530121, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.7027154366578712, ""method"": ""method2_alternating""}"
+models/phase3_method2/method2_fixedeval_d10_alpha+0.600_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": 0.6000000238418579, ""h"": 0.37287843227386475, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.7045089629946849, ""method"": ""method2_alternating""}"
+models/phase3_method2/method2_fixedeval_d10_alpha-0.200_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": -0.20000000298023224, ""h"": 0.3839516341686249, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.7105325488001181, ""method"": ""method2_alternating""}"
+models/phase3_method2/method2_fixedeval_d10_alpha-0.400_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": -0.4000000059604645, ""h"": 0.37032464146614075, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.7015610510718105, ""method"": ""method2_alternating""}"
+models/phase3_method2/method2_fixedeval_d10_alpha-0.600_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": -0.6000000238418579, ""h"": 0.38347941637039185, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.6963170160040284, ""method"": ""method2_alternating""}"
+models/phase3_method2/method2_fixedeval_d10_alpha-0.800_best.pt,4.12,Phase 3 Method 2 (alternating optimisation),notebooks/03,,,,,10,"{""alpha"": -0.800000011920929, ""h"": 0.3731920123100281, ""k"": 64, ""M"": 128, ""num_steps"": 16, ""dim"": 10, ""best_MAP"": 0.6970756534218177, ""method"": ""method2_alternating""}"
+models/sarkar_d2_reference.pt,1.17,"Sarkar 2-D reference embedding, tau=1.5 (first, float64 implementation — superseded)",notebooks/05,,,,,2,"{""tau"": 1.5, ""dim"": 2, ""construction"": ""sarkar_combinatorial""}"

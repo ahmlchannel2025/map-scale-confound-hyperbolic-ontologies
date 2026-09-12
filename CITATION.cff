@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Hyperbolic Embeddings of ICD-10-CM and the Loss-Temperature Confound in Reconstruction MAP"
+abstract: >-
+  Code, data pipeline, and experiments for a study of hyperbolic embeddings of
+  the 46,817-node ICD-10-CM diagnostic ontology. The central result is a
+  measurement: a single training-objective temperature moves reconstruction MAP
+  from 0.78 to 0.99 while distortion stays flat and out-of-training retrieval
+  falls, so reconstruction MAP alone cannot support the cross-method comparisons
+  the hyperbolic-embedding literature draws from it. Extends Sala et al. (2018).
+type: software
+authors:
+  - given-names: ""
+    family-names: ""
+    # Fill in before publishing.
+version: "0.1.0"
+date-released: "2026-09-12"
+license: MIT
+keywords:
+  - hyperbolic embeddings
+  - Poincare ball
+  - ICD-10-CM
+  - medical ontology
+  - mean average precision
+  - representation tradeoffs
+references:
+  - type: conference-paper
+    title: "Representation Tradeoffs for Hyperbolic Embeddings"
+    authors:
+      - family-names: Sala
+        given-names: Frederic
+      - family-names: De Sa
+        given-names: Christopher
+      - family-names: Gu
+        given-names: Albert
+      - family-names: "Ré"
+        given-names: Christopher
+    year: 2018
+    collection-title: "International Conference on Machine Learning (ICML)"

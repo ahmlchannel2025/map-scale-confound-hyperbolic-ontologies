@@ -1,0 +1,12 @@
+{
+  "source_xml": "/content/drive/MyDrive/Position-Dependent_Curvature_for_Hyperbolic_Embeddings_of_Medical_Ontologies/hyperbolic_medical_embedding/data/raw/icd10cm_extracted/icd10cm_tabular_2025.xml",
+  "icd10cm_version": "FY2025",
+  "total_nodes": 46817,
+  "total_edges": 46816,
+  "total_internal_nodes": 10775,
+  "total_leaves": 36042,
+  "max_depth": 7,
+  "max_branching": 34,
+  "max_subtree_size": 46816,
+  "date_processed": "2026-05-12"
+}

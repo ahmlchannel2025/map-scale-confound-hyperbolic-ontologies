@@ -1,0 +1,261 @@
+{
+  "tree": {
+    "name": "ICD-10-CM FY2025",
+    "num_nodes": 46817,
+    "num_edges": 46816
+  },
+  "euclidean_baseline_d10": {
+    "method": "euclidean",
+    "config": {
+      "optimizer": "Adam",
+      "lr": 0.1,
+      "epochs": 50,
+      "batch_size": 1024,
+      "num_negatives": 10,
+      "init_scale": 0.001,
+      "dim": 10
+    },
+    "metrics": {
+      "mean_rank": 7.71,
+      "median_rank": 3.0,
+      "MAP": 0.7773,
+      "mrr": 0.4196
+    },
+    "note": "Reference baseline to beat."
+  },
+  "poincare_d10_attempts": [
+    {
+      "method": "poincare_K-1",
+      "attempt": 1,
+      "config": {
+        "optimizer": "Adam",
+        "lr": 0.1,
+        "dim": 10
+      },
+      "metrics": {
+        "MAP": 0.69
+      },
+      "note": "Degenerate boundary. Full eval metrics not recorded."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 2,
+      "config": {
+        "optimizer": "Adam",
+        "lr": 0.01,
+        "dim": 10
+      },
+      "metrics": {
+        "MAP": 0.79
+      },
+      "note": "Partial degeneracy. MAP technically above Euclidean, but geometry not trustworthy (per handoff note)."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 3,
+      "config": {
+        "optimizer": "SGD",
+        "burnin_lr": 0.005,
+        "lr": 0.3,
+        "dim": 10
+      },
+      "metrics": null,
+      "note": "Too slow; abandoned during burn-in."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 4,
+      "config": {
+        "optimizer": "SGD",
+        "burnin_lr": 0.1,
+        "lr": 3.0,
+        "dim": 10
+      },
+      "metrics": null,
+      "note": "Too slow; abandoned."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 5,
+      "config": {
+        "optimizer": "Adam",
+        "lr": 0.01,
+        "max_norm_clip": 0.95,
+        "epochs": 300,
+        "dim": 10
+      },
+      "metrics": {
+        "MAP": 0.77
+      },
+      "note": "Adam + norm clipping. MAP near Euclidean. Boundary degeneracy not solved."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 6,
+      "config": {
+        "optimizer": "Adam",
+        "lr": 0.005,
+        "init_scale": 0.3,
+        "max_norm_clip": 0.7,
+        "dim": 10
+      },
+      "metrics": null,
+      "note": "Clip-jammed; loss did not converge. Hard clipping fought the manifold geometry."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 7,
+      "config": {
+        "optimizer": "RiemannianSGD",
+        "lr": 0.3,
+        "burnin_epochs": 20,
+        "burnin_multiplier": 0.01,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "init_scale": 0.001,
+        "dim": 10,
+        "max_norm_clip": "none"
+      },
+      "metrics": null,
+      "note": "First attempt at the Nickel-Kiela reference recipe (RSGD, burn-in, no clip). lr=0.3 was tuned for the reference's batch_size=10; at our batch_size=1024 the per-sample effective lr is ~100x too small. Loss barely moved over 290 epochs before abort."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 8,
+      "config": {
+        "optimizer": "RiemannianSGD",
+        "lr": 3.0,
+        "burnin_epochs": 10,
+        "burnin_multiplier": 0.01,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "init_scale": 0.001,
+        "dim": 10,
+        "max_norm_clip": "none"
+      },
+      "metrics": null,
+      "note": "10x lr from attempt 7. Loss dropped ~0.05 per 10 epochs - still too slow. Aborted around epoch 40."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 9,
+      "config": {
+        "optimizer": "RiemannianSGD",
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "burnin_multiplier": 0.01,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "init_scale": 0.001,
+        "dim": 10,
+        "max_norm_clip": "none"
+      },
+      "metrics": {
+        "mean_rank": 187.0052,
+        "median_rank": 4.0,
+        "MAP": 0.654,
+        "mrr": 0.331,
+        "num_evaluated": 46816
+      },
+      "final_loss": 0.4591,
+      "final_geometry": {
+        "ROOT_norm": 0.9393,
+        "mean_norm": 0.9026,
+        "max_norm": 0.9393
+      },
+      "note": "First fully-converged Poincar\u00e9 run. Trained cleanly to loss 0.4591. Geometry collapsed to a thin shell near the boundary (ROOT itself drifted to 0.94, equal to max_norm in every print). MAP underperforms Euclidean."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 10,
+      "config": {
+        "optimizer": "RiemannianSGD",
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 50,
+        "burnin_multiplier": 0.01,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "init_scale": 0.001,
+        "dim": 10,
+        "max_norm_clip": "none",
+        "regularizers": {
+          "root_freeze_epochs": "1-60 (burn-in + 50 train epochs)",
+          "hierarchy_margin": 0.05,
+          "hierarchy_lambda": 1.0
+        }
+      },
+      "metrics": {
+        "mean_rank": 497.1939,
+        "median_rank": 3.0,
+        "MAP": 0.7408,
+        "mrr": 0.4097,
+        "num_evaluated": 46816
+      },
+      "final_loss": 0.7484,
+      "final_geometry": {
+        "ROOT_norm": 0.7337,
+        "mean_norm": 0.8943,
+        "max_norm": 0.9146
+      },
+      "note": "ROOT pinned at origin for first 60 epochs then released. Hierarchy regularization (parent norm < child norm - margin) applied throughout. ROOT stayed at exactly 0 during freeze, climbed to 0.73 after release. MAP improved from 0.654 (attempt 9) but still below Euclidean's 0.7773."
+    },
+    {
+      "method": "poincare_K-1",
+      "attempt": 11,
+      "config": {
+        "optimizer": "RiemannianSGD",
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "burnin_multiplier": 0.01,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "init_scale": 0.001,
+        "dim": 10,
+        "max_norm_clip": "none",
+        "regularizers": {
+          "root_freeze_epochs": "permanent",
+          "hierarchy_margin": 0.05,
+          "hierarchy_lambda": 1.0
+        }
+      },
+      "metrics": {
+        "mean_rank": 497.3826,
+        "median_rank": 3.0,
+        "MAP": 0.7399,
+        "mrr": 0.4081,
+        "num_evaluated": 46816
+      },
+      "final_loss": 0.7458,
+      "final_geometry": {
+        "ROOT_norm": 0.0,
+        "mean_norm": 0.8944,
+        "max_norm": 0.9141
+      },
+      "note": "ROOT permanently pinned at origin. Metrics within 0.001 of attempt 10 on MAP and within 0.2 on mean_rank - confirms ROOT's specific position does NOT drive reconstruction quality on this tree. The MAP gap vs Euclidean is driven by interior-tree edges, not ROOT placement."
+    }
+  ],
+  "key_findings": [
+    "lr=0.3 from the Nickel-Kiela paper assumes batch_size=10; at batch_size=1024 the per-sample effective lr is too low to train. Scale lr roughly with batch size.",
+    "RiemannianAdam (attempts 1-6, indirectly) interacts poorly with the Poincar\u00e9 metric due to per-coordinate adaptive scaling. Use RiemannianSGD.",
+    "Manual norm clipping after each optimizer step fights the manifold's exponential map and produces 'clip-jammed' training (attempt 6).",
+    "At convergence with RSGD + lr=10, the embedding collapses to a thin annulus near the boundary (mean ~ 0.89, max ~ 0.91). ROOT in this regime gets pushed outward by negative-sampling dynamics.",
+    "Root-freeze + hierarchy regularization recovers significant MAP (0.654 -> 0.741) without changing optimizer or core loss.",
+    "Whether ROOT is pinned at origin or drifts to ~0.73 does not change MAP in this setup - the bottleneck is in interior-tree edges, not at the root."
+  ],
+  "metadata": {
+    "date_compiled": "2026-05-15T03:57:05.159208",
+    "total_attempts": 11,
+    "completed_evaluations": 6,
+    "best_MAP": 0.7408,
+    "best_MAP_attempt": 10,
+    "euclidean_d10_MAP": 0.7773,
+    "poincare_beats_euclidean": false
+  }
+}

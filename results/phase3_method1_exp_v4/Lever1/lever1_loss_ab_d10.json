@@ -1,0 +1,50 @@
+{
+  "experiment": "lever1_loss_ab_softmax_vs_bpr",
+  "config": {
+    "alpha": -0.8,
+    "dim": 10,
+    "epochs": 60,
+    "field_warmup": 10,
+    "num_negatives": 50,
+    "coupling": "exp",
+    "kappa_scale": 1.0,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "fixed_eval": true
+  },
+  "softmax": {
+    "MAP_mean": 0.7753,
+    "MAP_std": 0.0004,
+    "per_seed_best_MAP": [
+      0.7753,
+      0.7748,
+      0.7758
+    ],
+    "best_epoch": [
+      40,
+      40,
+      40
+    ],
+    "note": "peaks mid-training (~ep40) then mild overfit decline; meanR ~135"
+  },
+  "bpr": {
+    "MAP_mean": 0.7537,
+    "MAP_std": 0.0001,
+    "per_seed_best_MAP": [
+      0.7537,
+      0.7536,
+      0.7539
+    ],
+    "best_epoch": [
+      59,
+      59,
+      59
+    ],
+    "note": "monotonic, unconverged at ep59 (still rising); best meanR 108 (beats softmax 135)"
+  },
+  "delta_bpr_minus_softmax": -0.0216,
+  "verdict": "BPR loses on MAP by 0.0216 (stable across seeds). Loss is NOT the MAP bottleneck. Keep softmax. BPR cleans tail (meanR 108<135) but costs top-of-ranking precision."
+}

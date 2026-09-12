@@ -1,0 +1,27 @@
+{
+  "0.3": {
+    "MAP": 0.001,
+    "mean_rank": 5885.7,
+    "distortion": 0.9234
+  },
+  "0.5": {
+    "MAP": 0.0011,
+    "mean_rank": 5391.2,
+    "distortion": 0.8667
+  },
+  "0.8": {
+    "MAP": 0.0016,
+    "mean_rank": 4370.4,
+    "distortion": 0.7662
+  },
+  "1.0": {
+    "MAP": 0.0023,
+    "mean_rank": 3619.5,
+    "distortion": 0.6858
+  },
+  "1.5": {
+    "MAP": 0.0061,
+    "mean_rank": 1944.0,
+    "distortion": 0.44
+  }
+}

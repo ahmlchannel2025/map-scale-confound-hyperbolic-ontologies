@@ -1,0 +1,90 @@
+{
+  "-0.800": {
+    "mean_rank": 156.613,
+    "median_rank": 4.0,
+    "MAP": 0.6970756534218177,
+    "mrr": 0.37447841366572643,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 1,
+    "best_epoch": 15,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  },
+  "-0.600": {
+    "mean_rank": 81.667,
+    "median_rank": 4.0,
+    "MAP": 0.6963170160040284,
+    "mrr": 0.38433322824998867,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 2,
+    "best_epoch": 30,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  },
+  "-0.400": {
+    "mean_rank": 188.5315,
+    "median_rank": 4.0,
+    "MAP": 0.7015610510718105,
+    "mrr": 0.38477965398562897,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 1,
+    "best_epoch": 15,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  },
+  "-0.200": {
+    "mean_rank": 167.3425,
+    "median_rank": 3.5,
+    "MAP": 0.7105325488001181,
+    "mrr": 0.39837801946884166,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 2,
+    "best_epoch": 30,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  },
+  "+0.000": {
+    "mean_rank": 270.0415,
+    "median_rank": 5.0,
+    "MAP": 0.6570998111365672,
+    "mrr": 0.3235861248868872,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 1,
+    "best_epoch": 15,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  },
+  "+0.200": {
+    "mean_rank": 101.6615,
+    "median_rank": 4.0,
+    "MAP": 0.7074635619594127,
+    "mrr": 0.3902373733329631,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 3,
+    "best_epoch": 45,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  },
+  "+0.400": {
+    "mean_rank": 110.289,
+    "median_rank": 4.0,
+    "MAP": 0.7027154366578712,
+    "mrr": 0.38712878564660635,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 1,
+    "best_epoch": 15,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  },
+  "+0.600": {
+    "mean_rank": 143.4905,
+    "median_rank": 4.0,
+    "MAP": 0.7045089629946849,
+    "mrr": 0.39129839472253786,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 1,
+    "best_epoch": 15,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  }
+}

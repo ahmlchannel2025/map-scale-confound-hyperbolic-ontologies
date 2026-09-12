@@ -1,0 +1,12 @@
+{
+  "d50": {
+    "mean_rank": 4712.958924299385,
+    "median_rank": 6.0,
+    "MAP": 0.5552850854175266,
+    "MRR": 0.2950007589637548,
+    "num_evaluated": 46816,
+    "final_c": 6.3421,
+    "initial_c": 1.0,
+    "notes": "consistent with known projection-mismatch instability; c drift scales monotonically with dim (d5: ~1.0, d10: 2.76, d50: 6.34); long-tail boundary-pinned failure (median_rank=6 vs mean_rank=4713 \u2192 handful of catastrophically misplaced nodes, not global collapse); MAP plateaus across d=10/50 because broken-gradient regime caps performance independent of capacity"
+  }
+}

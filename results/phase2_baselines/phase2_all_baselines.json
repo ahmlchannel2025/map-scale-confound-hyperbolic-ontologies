@@ -1,0 +1,266 @@
+{
+  "compiled_at": "2026-05-20T00:39:26.057158",
+  "evaluation": "reconstruction (full edge set, all 46,816 edges)",
+  "num_negatives_train": 50,
+  "notes": "Phase 2 baseline sweep \u2014 4 methods \u00d7 3 dimensions = 12 runs. All methods trained with K=50 negatives for fair comparison of the NK softmax loss. Euclidean: Adam lr=0.1, 50 epochs, no freeze, no hierarchy. Poincar\u00e9 / Learnable-K / Mixed-Curvature: RiemannianSGD lr=10.0, permanent ROOT freeze, hierarchy regularization (margin=0.05, lambda_h=1.0), 300 epochs, 10-epoch burnin at lr*0.01. NOTE: Euclidean d=10 is the K=50 retrain (5/19); original K=10 version (MAP=0.7773) is superseded.",
+  "runs": {
+    "euclidean_d5": {
+      "method": "Euclidean",
+      "dim": 5,
+      "metrics": {
+        "mean_rank": 88.8136961722488,
+        "median_rank": 17.0,
+        "MAP": 0.27269207678216306,
+        "num_evaluated": 46816,
+        "MRR": 0.1839035977083882
+      },
+      "config": {}
+    },
+    "euclidean_d10": {
+      "method": "Euclidean",
+      "dim": 10,
+      "metrics": {
+        "mean_rank": 7.070125598086125,
+        "median_rank": 3.0,
+        "MAP": 0.8606489867830377,
+        "num_evaluated": 46816,
+        "MRR": 0.42471767679789724
+      },
+      "config": {
+        "dim": 10,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "learning_rate": 0.1,
+        "num_epochs": 50
+      }
+    },
+    "euclidean_d50": {
+      "method": "Euclidean",
+      "dim": 50,
+      "metrics": {
+        "mean_rank": 109.80707450444292,
+        "median_rank": 3.0,
+        "MAP": 0.900106391940014,
+        "num_evaluated": 46816,
+        "MRR": 0.4170461499720877
+      },
+      "config": {}
+    },
+    "poincare_d5": {
+      "method": "Poincar\u00e9 K=\u22121",
+      "dim": 5,
+      "metrics": {
+        "mean_rank": 989.374765037594,
+        "median_rank": 3.0,
+        "MAP": 0.6827185274146321,
+        "num_evaluated": 46816,
+        "MRR": 0.391942673832971
+      },
+      "config": {
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024
+      }
+    },
+    "poincare_d10": {
+      "method": "Poincar\u00e9 K=\u22121",
+      "dim": 10,
+      "metrics": {
+        "mean_rank": 497.3826,
+        "median_rank": 3.0,
+        "MAP": 0.7399,
+        "num_evaluated": 46816,
+        "MRR": 0.4081
+      },
+      "config": {
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024
+      }
+    },
+    "poincare_d50": {
+      "method": "Poincar\u00e9 K=\u22121",
+      "dim": 50,
+      "metrics": {
+        "mean_rank": 59.348534688995215,
+        "median_rank": 3.0,
+        "MAP": 0.8186983810126992,
+        "num_evaluated": 46816,
+        "MRR": 0.4211172889890217
+      },
+      "config": {
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024
+      }
+    },
+    "learnable_K_d5": {
+      "method": "Learnable K (single global c)",
+      "dim": 5,
+      "metrics": {
+        "mean_rank": 2713.8345223855094,
+        "median_rank": 3.0,
+        "MAP": 0.6543730869238694,
+        "num_evaluated": 46816,
+        "MRR": 0.38086857723821504
+      },
+      "config": {
+        "optimizer": "RiemannianSGD",
+        "lr": 10.0,
+        "lr_c": 0.01,
+        "init_c": 1.0,
+        "c_min": 0.1,
+        "c_max": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024
+      }
+    },
+    "learnable_K_d10": {
+      "method": "Learnable K (single global c)",
+      "dim": 10,
+      "metrics": {
+        "mean_rank": 2698.964734278879,
+        "median_rank": 4.0,
+        "MAP": 0.554977898033975,
+        "num_evaluated": 46816,
+        "MRR": 0.32390910149560936
+      },
+      "config": {
+        "optimizer": "RiemannianSGD",
+        "lr": 10.0,
+        "lr_c": 0.01,
+        "init_c": 1.0,
+        "c_min": 0.1,
+        "c_max": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024
+      }
+    },
+    "learnable_K_d50": {
+      "method": "Learnable K (single global c)",
+      "dim": 50,
+      "metrics": {
+        "mean_rank": 4712.958924299385,
+        "median_rank": 6.0,
+        "MAP": 0.5552850854175266,
+        "num_evaluated": 46816,
+        "MRR": 0.2950007589637548
+      },
+      "config": {
+        "optimizer": "RiemannianSGD",
+        "lr": 10.0,
+        "lr_c": 0.01,
+        "init_c": 1.0,
+        "c_min": 0.1,
+        "c_max": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024
+      }
+    },
+    "mixed_curvature_d5": {
+      "method": "Mixed-Curvature (P \u00d7 E)",
+      "dim": 5,
+      "metrics": {
+        "mean_rank": 746.0102956254271,
+        "median_rank": 3.0,
+        "MAP": 0.6806030706135352,
+        "num_evaluated": 46816,
+        "MRR": 0.39506160325435413
+      },
+      "config": {
+        "total_dim": 5,
+        "dim_h": 3,
+        "dim_e": 2,
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "c": 1.0
+      }
+    },
+    "mixed_curvature_d10": {
+      "method": "Mixed-Curvature (P \u00d7 E)",
+      "dim": 10,
+      "metrics": {
+        "mean_rank": 243.82587149692412,
+        "median_rank": 3.0,
+        "MAP": 0.756310004497069,
+        "num_evaluated": 46816,
+        "MRR": 0.42016444305216005
+      },
+      "config": {
+        "total_dim": 10,
+        "dim_h": 5,
+        "dim_e": 5,
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "c": 1.0
+      }
+    },
+    "mixed_curvature_d50": {
+      "method": "Mixed-Curvature (P \u00d7 E)",
+      "dim": 50,
+      "metrics": {
+        "mean_rank": 39.690725393028025,
+        "median_rank": 3.0,
+        "MAP": 0.8274095239953723,
+        "num_evaluated": 46816,
+        "MRR": 0.439640074403514
+      },
+      "config": {
+        "total_dim": 50,
+        "dim_h": 25,
+        "dim_e": 25,
+        "lr": 10.0,
+        "burnin_epochs": 10,
+        "freeze_train_epochs": 10000,
+        "margin": 0.05,
+        "lambda_h": 1.0,
+        "epochs": 300,
+        "num_negatives": 50,
+        "batch_size": 1024,
+        "c": 1.0
+      }
+    }
+  }
+}

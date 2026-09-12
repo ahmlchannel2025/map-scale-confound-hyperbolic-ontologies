@@ -1,0 +1,13 @@
+{
+  "-0.200": {
+    "mean_rank": 54.1235,
+    "median_rank": 3.0,
+    "MAP": 0.7102677216583242,
+    "mrr": 0.3931430397674774,
+    "num_evaluated": 2000.0,
+    "best_outer_loop": 3,
+    "best_epoch": 45,
+    "outer_loops": 4,
+    "inner_epochs": 15
+  }
+}

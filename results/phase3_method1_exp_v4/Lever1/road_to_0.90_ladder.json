@@ -1,0 +1,73 @@
+{
+  "goal": "push d=10 MAP above 0.775 (stretch: 0.90)",
+  "baseline_locked": {
+    "MAP": 0.775,
+    "config": "full-field curvature, alpha=-0.8, d=10, Phase2 ref"
+  },
+  "reference_points": {
+    "euclidean_d10": 0.777,
+    "poincare_d10": 0.74,
+    "mixed_curvature_d10": 0.756,
+    "constant_curv_alpha0_d10": 0.76,
+    "euclidean_d50": 0.975,
+    "note": "d=10 is near Euclidean's natural ceiling (~0.777); 0.90 appears dimensional"
+  },
+  "levers": [
+    {
+      "id": "L0_base_embedding",
+      "status": "DONE-KEPT",
+      "effect": "broken warmup -> Phase2 hierarchy-loss ref: 0.67 -> 0.775",
+      "delta": "+0.10+",
+      "note": "the single biggest fix; broken warmup had depth-inverted, origin-piled cloud"
+    },
+    {
+      "id": "L_curvature_full_field",
+      "status": "DONE-KEPT",
+      "effect": "constant 0.760 -> curvature 0.775 at alpha=-0.8",
+      "delta": "+0.015",
+      "note": "sign-symmetric (|alpha| matters, not sign); field collapses to binary leaf/internal switch"
+    },
+    {
+      "id": "L_more_negatives_K50",
+      "status": "DONE-KEPT",
+      "effect": "K=10 -> 50",
+      "delta": "small positive",
+      "note": "kept; on the strong base"
+    },
+    {
+      "id": "L1_bpr_loss",
+      "status": "DONE-REJECTED",
+      "effect": "softmax 0.7753 -> bpr 0.7537",
+      "delta": "-0.0216",
+      "note": "loss is NOT the bottleneck; BPR better on meanR (108) worse on MAP"
+    },
+    {
+      "id": "L_internal_only_field",
+      "status": "DONE-SIDELINED",
+      "effect": "MAP 0.755 (below full field) but meanR 83 (best tail) + graded inverted law corr=-0.55",
+      "delta": "MAP -0.02, meanR -52",
+      "note": "mechanism result, not MAP result; keep for paper"
+    },
+    {
+      "id": "L2_better_base",
+      "status": "TODO",
+      "note": "longer base training, lambda_h up, more base negatives - one at a time"
+    },
+    {
+      "id": "L3_richer_features_MLP_field",
+      "status": "TODO",
+      "note": "add depth/sibling/density features + small MLP; may unlock graded law"
+    },
+    {
+      "id": "L4_desaturate_two_stage_leaves",
+      "status": "TODO",
+      "note": "lower kappa_scale; internal-learns-then-leaves-learn"
+    },
+    {
+      "id": "L_dimension_d50",
+      "status": "TODO-HIGH-VALUE",
+      "note": "the only lever that plausibly reaches 0.90 (Euclidean d50=0.975); open Q: does curvature still help at d=50?"
+    }
+  ],
+  "standing_conclusion": "d=10 MAP levers largely exhausted near ~0.775 (Euclidean d=10 ceiling). 0.90 is a dimensional gap, not a curvature/loss/technique gap. Remaining d=10 levers (L2-L4) are mechanism-improving, ~+0.005-0.01 at most. To reach 0.90: need d>10."
+}

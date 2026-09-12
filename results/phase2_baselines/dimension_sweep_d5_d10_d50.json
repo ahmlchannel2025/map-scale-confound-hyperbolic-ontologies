@@ -1,0 +1,47 @@
+{
+  "date_compiled": "2026-05-15T20:27:41.026190",
+  "results": {
+    "euclidean_d5": {
+      "mean_rank": 88.8136961722488,
+      "median_rank": 17.0,
+      "MAP": 0.27269207678216306,
+      "mrr": 0.1839035977083882,
+      "num_evaluated": 46816
+    },
+    "euclidean_d10": {
+      "mean_rank": 7.71,
+      "median_rank": 3.0,
+      "MAP": 0.7773,
+      "mrr": 0.4196,
+      "num_evaluated": 46816
+    },
+    "poincare_d10": {
+      "mean_rank": 497.3826,
+      "median_rank": 3.0,
+      "MAP": 0.7399,
+      "mrr": 0.4081,
+      "num_evaluated": 46816
+    },
+    "euclidean_d50": {
+      "mean_rank": 109.80707450444292,
+      "median_rank": 3.0,
+      "MAP": 0.900106391940014,
+      "mrr": 0.4170461499720877,
+      "num_evaluated": 46816
+    },
+    "poincare_d5": {
+      "mean_rank": 989.374765037594,
+      "median_rank": 3.0,
+      "MAP": 0.6827185274146321,
+      "mrr": 0.391942673832971,
+      "num_evaluated": 46816
+    },
+    "poincare_d50": {
+      "mean_rank": 59.348534688995215,
+      "median_rank": 3.0,
+      "MAP": 0.8186983810126992,
+      "mrr": 0.4211172889890217,
+      "num_evaluated": 46816
+    }
+  }
+}

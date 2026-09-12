@@ -1,0 +1,9 @@
+{
+  "date_downloaded": "2026-05-14T05:33:52.703299",
+  "icd10_zip": "/content/drive/MyDrive/Position-Dependent_Curvature_for_Hyperbolic_Embeddings_of_Medical_Ontologies/hyperbolic_medical_embedding/data/raw/icd10cm_2025_code_tables.zip",
+  "icd10_zip_size_mb": 22.809189,
+  "extract_dir": "/content/drive/MyDrive/Position-Dependent_Curvature_for_Hyperbolic_Embeddings_of_Medical_Ontologies/hyperbolic_medical_embedding/data/raw/icd10cm_extracted",
+  "tabular_xml": "/content/drive/MyDrive/Position-Dependent_Curvature_for_Hyperbolic_Embeddings_of_Medical_Ontologies/hyperbolic_medical_embedding/data/raw/icd10cm_extracted/icd10cm_tabular_2025.xml",
+  "tabular_xml_size_mb": 9.657316,
+  "source_url": "https://www.cms.gov/files/zip/2025-code-tables-tabular-and-index.zip"
+}

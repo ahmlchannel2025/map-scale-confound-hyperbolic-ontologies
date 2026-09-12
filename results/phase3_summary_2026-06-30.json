@@ -1,0 +1,222 @@
+{
+  "project": "Position-Dependent Curvature for Hyperbolic Embeddings of Medical Ontologies",
+  "dataset": {
+    "ontology": "ICD-10",
+    "n_nodes": 46817,
+    "n_edges": 46816,
+    "depth_levels": 7,
+    "tree": true
+  },
+  "task": "hierarchical link reconstruction / neighbor ranking",
+  "metrics": {
+    "MAP": "higher better",
+    "mean_rank": "lower better"
+  },
+  "baselines_d10": {
+    "euclidean": {
+      "MAP": 0.777,
+      "mean_rank": 7.7
+    },
+    "poincare_K-1": {
+      "MAP": 0.74,
+      "mean_rank": 497
+    },
+    "mixed_curvature": {
+      "MAP": 0.756,
+      "mean_rank": 244
+    },
+    "constant_curvature_alpha0_trained": {
+      "MAP": 0.76,
+      "mean_rank": 460,
+      "note": "the method's own alpha=0 after joint training; honest curvature baseline"
+    },
+    "constant_curvature_alpha0_eval_only": {
+      "MAP": 0.7454,
+      "mean_rank": 400,
+      "note": "loaded Phase2 ref, evaluated without further training"
+    }
+  },
+  "baselines_other_dims": {
+    "euclidean_d50": {
+      "MAP": 0.975
+    },
+    "euclidean_d5": {
+      "MAP": 0.45
+    },
+    "poincare_d5": {
+      "MAP": 0.68
+    },
+    "note": "d=5 hyperbolic >> euclidean (geometry matters); d=50 euclidean wins (room ample)"
+  },
+  "method": {
+    "name": "Tree-Anchored Variable Curvature (Method 1)",
+    "field": "kappa(x) = kappa_scale * tanh(W . features), kernel-smoothed over a frozen reference cloud",
+    "coupling": "lambda(x) = [2/(1-||x||^2)] * e^(alpha*kappa)  (exp, always positive)",
+    "distance": "line-integral of conformal factor over straight chord, num_steps=16",
+    "reference_cloud": "Phase2 Poincare d10 hierarchy-trained checkpoint (depth-ordered)"
+  },
+  "key_findings": {
+    "broken_warmup_root_cause": {
+      "problem": "in-notebook warmup lacked hierarchy loss -> depth-inverted, origin-piled cloud (58% nodes within 0.05 of origin)",
+      "symptom": "capped MAP ~0.67; bandwidth h collapsed to 0.0034",
+      "fix": "load Phase2 hierarchy-trained ref; alpha=0 reproduces 0.745; h recovers to 0.55"
+    },
+    "alpha_sweep": {
+      "shape": "symmetric V in MAP, Lambda in mean_rank, around alpha=0",
+      "peak_MAP": {
+        "alpha": -0.8,
+        "MAP": 0.7752,
+        "mean_rank": 136
+      },
+      "sign_symmetry": "sign of alpha is meaningless - learnable field absorbs it; only |alpha| matters",
+      "ceiling": "MAP peaks at |alpha|~0.8 then declines; mean_rank keeps falling past peak (tail vs MAP tradeoff)"
+    },
+    "binary_switch": {
+      "finding": "field collapses to a binary leaf/internal partition, NOT a graded branching law",
+      "kappa_vs_branching": "step function: leaf -> -1, all internal (b=1..15) -> +1 flat",
+      "ablations_confirming_intrinsic": [
+        "desaturation (kappa_scale 1.0/0.5/0.2): same binary shape rescaled; identical MAP 0.7752 -> saturation NOT the cause",
+        "MLP + 6 rich features (depth, sibling, dist-to-root, imbalance): internal nodes STILL flat -> capacity/features NOT the cause"
+      ],
+      "conclusion": "leaf/internal distinction is the COMPLETE learnable curvature signal at d=10; branching magnitude carries no usable signal"
+    }
+  },
+  "sweeps": {
+    "alpha_sweep_d10_60ep_seed0": {
+      "-1.2": {
+        "MAP": 0.7669,
+        "mean_rank": 113,
+        "best_epoch": 39
+      },
+      "-1.0": {
+        "MAP": 0.7719,
+        "mean_rank": 121,
+        "best_epoch": 39
+      },
+      "-0.8": {
+        "MAP": 0.7752,
+        "mean_rank": 136,
+        "best_epoch": 39,
+        "note": "PEAK MAP"
+      },
+      "-0.6": {
+        "MAP": 0.775,
+        "mean_rank": 163,
+        "best_epoch": 49
+      },
+      "-0.4": {
+        "MAP": 0.7726,
+        "mean_rank": 221,
+        "best_epoch": 59
+      },
+      "-0.2": {
+        "MAP": 0.7673,
+        "mean_rank": 333,
+        "best_epoch": 59
+      },
+      "0.0": {
+        "MAP": 0.7603,
+        "mean_rank": 460,
+        "best_epoch": 49,
+        "note": "constant-curvature baseline"
+      },
+      "+0.2": {
+        "MAP": 0.7674,
+        "mean_rank": 333,
+        "best_epoch": 59,
+        "note": "mirror of -0.2"
+      },
+      "+0.4": {
+        "MAP": 0.7727,
+        "mean_rank": 221,
+        "best_epoch": 59,
+        "note": "mirror of -0.4"
+      }
+    },
+    "desaturation_d10_seed0_alpha_coscaled": {
+      "kappa_scale_1.0_alpha-0.8": {
+        "MAP": 0.7752,
+        "mean_rank": 136,
+        "kappa_by_branching": "binary, internal=+1.0"
+      },
+      "kappa_scale_0.5_alpha-1.6": {
+        "MAP": 0.7752,
+        "mean_rank": 136,
+        "kappa_by_branching": "binary, internal=+0.5"
+      },
+      "kappa_scale_0.2_alpha-4.0": {
+        "MAP": 0.7752,
+        "mean_rank": 136,
+        "kappa_by_branching": "binary, internal=+0.2"
+      },
+      "note": "identical MAP - alpha*kappa held constant; binary shape invariant to scale"
+    }
+  },
+  "lever_ladder": {
+    "L0_base_embedding_fix": {
+      "status": "DONE-KEPT",
+      "delta": "+0.10+",
+      "effect": "0.67 -> 0.775",
+      "note": "biggest single fix; broken warmup -> Phase2 hierarchy ref"
+    },
+    "L_curvature_full_field": {
+      "status": "DONE-KEPT",
+      "delta": "+0.015",
+      "effect": "0.760 -> 0.775 at alpha=-0.8"
+    },
+    "L_more_negatives_K50": {
+      "status": "DONE-KEPT",
+      "delta": "small+",
+      "effect": "K=10 -> 50"
+    },
+    "L1_bpr_loss": {
+      "status": "DONE-REJECTED",
+      "delta": "-0.0216",
+      "result": {
+        "softmax": "0.7753+/-0.0004",
+        "bpr": "0.7537+/-0.0001"
+      },
+      "note": "loss not the bottleneck; BPR better meanR(108) worse MAP"
+    },
+    "L_internal_only_field": {
+      "status": "DONE-SIDELINED",
+      "result": {
+        "MAP": 0.755,
+        "mean_rank": 83,
+        "internal_ramp_corr": -0.55
+      },
+      "note": "best tail in project at the time; graded INVERTED internal law; MAP below full field"
+    },
+    "L2_base_retrain": {
+      "status": "ABANDONED",
+      "note": "homemade + verbatim-Phase2 trainer both invert depth ordering in this notebook; cause unidentified (env/version); loaded ref retained. Inputs verified clean (tree N-1 edges, parent->child orientation)"
+    },
+    "L3_desaturation": {
+      "status": "DONE-REJECTED",
+      "note": "binary switch is NOT saturation; same MAP 0.7752 at all scales"
+    },
+    "L3_mlp_rich_features": {
+      "status": "DONE-REJECTED-for-MAP",
+      "result": {
+        "best_MAP": 0.7567,
+        "best_mean_rank": 81,
+        "internal_ramp": "noise (~flat at -1.0)"
+      },
+      "note": "6 features + MLP still binary on branching axis; BUT best mean_rank in project (81); field sign-flipped (internal=-1)"
+    }
+  },
+  "standing_conclusions": {
+    "map_ceiling_d10": "~0.775, triply confirmed; equals Euclidean d10 (0.777) = dimension's natural capacity",
+    "curvature_effect": "small on MAP (+0.015), LARGE on mean_rank (460 -> 81-136, ~70-80% tail reduction)",
+    "mechanism": "learned leaf/internal curvature partition; cleans boundary-shell tail; branching magnitude irrelevant",
+    "0.90_target": "dimensional, not curvature - requires d>10 (Euclidean d50=0.975). No d=10 lever spans the +0.12 gap",
+    "publishable_claim": "position-dependent curvature improves hierarchical embedding via a learned leaf/internal partition; effect concentrated in the tail and (predicted) in the low-dim regime where geometry is scarce"
+  },
+  "open_untested": {
+    "d5_sweep": "HIGH VALUE - thesis predicts effect GROWS where space scarce; never tested",
+    "d50_sweep": "the 0.90 path; open Q whether curvature still helps at high d",
+    "two_stage_leaf_learning": "internal learns then leaves learn own kappa (not just inherit)",
+    "multiseed_optimum": "alpha=-0.8 across seeds 1,2 for error bars before writeup",
+    "math_derivations": "|K| ~ (log b)^2 from volume growth; Cartan-Hadamard preservation; line-integral error bound (all unstarted)"
+  }
+}
