@@ -10,8 +10,8 @@ abstract: >-
   the hyperbolic-embedding literature draws from it. Extends Sala et al. (2018).
 type: software
 authors:
-  - given-names: ""
-    family-names: ""
+  - given-names: "Andrew"
+    family-names: "Lin"
     # Fill in before publishing.
 version: "0.1.0"
 date-released: "2026-09-12"
