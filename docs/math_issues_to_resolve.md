@@ -2,8 +2,6 @@ MATH ISSUES TO RESOLVE DURING PHASE 3 DERIVATION WORK
 
 =====================================================
 
-Recorded from Stanford Agentic Review v3 (May 11, 2026)
-
 1. CONFORMAL LENGTH FORMULA DIRECTION
 
    Issue: For g = λ² g^E, the arc length is ds = λ ‖dx‖ (multiply by λ).
